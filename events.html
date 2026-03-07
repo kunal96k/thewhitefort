@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The White Fort - Events & Offers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .hero-wrap.hero-wrap-2 {
+            height: 400px;
+        }
+
+        .events-header {
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .events-header h1 {
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .event-card {
+            background: #fff;
+            border: 1px solid #eee;
+            margin-bottom: 50px;
+            border-radius: 0;
+            overflow: hidden;
+        }
+
+        .event-card .event-img {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .event-card .event-date {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #c0872a;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        .event-card .event-date .day {
+            font-size: 2rem;
+            font-weight: 800;
+            display: block;
+        }
+
+        .event-card .event-date .month {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .event-card .event-content {
+            padding: 40px;
+        }
+
+        .event-card .event-badge {
+            color: #c0872a;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.75rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .event-card h3 {
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .event-card p {
+            color: #777;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .btn-gold {
+            background: #c0872a;
+            color: #fff;
+            padding: 15px 35px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btn-gold:hover {
+            background: #1a1a1a;
+            color: #fff;
+        }
+    </style>
+    <style id="twf-square-style">
+        .img,
+        .thumb-menu,
+        .form-control,
+        .btn,
+        .dbox,
+        .event-card,
+        .twf-modal {
+            border-radius: 0 !important;
+        }
+
+        .icon {
+            border-radius: 0 !important;
+        }
+    </style>
+    <style id="twf-custom-overrides">
+        /* Square Corners */
+        .img,
+        .thumb-menu,
+        .form-control,
+        .btn,
+        .dbox,
+        .event-card,
+        .twf-modal,
+        .icon {
+            border-radius: 0 !important;
+        }
+
+        /* Modal Close Button Visibility */
+        .twf-modal-close {
+            color: #ffffff !important;
+            opacity: 1 !important;
+            font-size: 28px !important;
+            background: rgba(255, 255, 255, 0.1) !important;
+            border: none !important;
+            width: 40px !important;
+            height: 40px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            position: absolute !important;
+            top: 15px !important;
+            right: 15px !important;
+            z-index: 9999 !important;
+        }
+
+        .twf-modal-close:hover {
+            background: rgba(255, 255, 255, 0.3) !important;
+        }
+
+        /* Contact Card Icons Visibility */
+        .dbox .icon {
+            background: #c0872a !important;
+            color: #ffffff !important;
+            width: 60px !important;
+            height: 60px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            margin: 0 auto 20px !important;
+        }
+
+        .dbox .icon span {
+            color: #ffffff !important;
+            font-size: 24px !important;
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">The White Fort</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li id="nav-index" class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li id="nav-about" class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li id="nav-menu" class="nav-item"><a href="menu.html" class="nav-link">Specialties</a></li>
+                    <li id="nav-reservation" class="nav-item"><a href="reservation.html"
+                            class="nav-link">Reservation</a></li>
+                    <li id="nav-events" class="nav-item active"><a href="events.html" class="nav-link">Events</a></li>
+                    <li id="nav-blog" class="nav-item"><a href="blog.html" class="nav-link">Stories</a></li>
+                    <li id="nav-contact" class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_5.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-9 text-center">
+                    <h1 class="mb-2 bread" style="color:#fff; font-weight:800; text-transform:uppercase;">Events &
+                        Special Offers</h1>
+                    <p class="breadcrumbs" style="color:#fff;"><span class="mr-2"><a href="index.html"
+                                style="color:#fff;">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Events
+                            <i class="ion-ios-arrow-forward"></i></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Detailed Event 1 -->
+                <div class="col-md-12">
+                    <div class="event-card row no-gutters">
+                        <div class="col-md-5 event-img" style="background-image: url('images/bg_3.jpg');">
+                            <div class="event-date">
+                                <span class="day">11</span>
+                                <span class="month">SEP</span>
+                            </div>
+                        </div>
+                        <div class="col-md-7 event-content">
+                            <span class="event-badge">Culinary Excellence</span>
+                            <h3>Grand Biryani Festival</h3>
+                            <p>Experience the royal taste of our signature Dum Biryani varieties. From the spicy
+                                Hyderabadi flavor to the aromatic Lucknowi style, our master chefs bring you the
+                                ultimate Biryani experience. Each portion is cooked with long-grain Basmati rice,
+                                hand-picked spices, and succulent pieces of meat.</p>
+                            <p><strong>Highlights:</strong> Unlimited Salan, Raita, and a Special Dessert for every
+                                table.</p>
+                            <a href="reservation.html" class="btn-gold">Reserve Your Table</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detailed Event 2 -->
+                <div class="col-md-12">
+                    <div class="event-card row no-gutters">
+                        <div class="col-md-5 event-img" style="background-image: url('images/bg_2.jpg');">
+                            <div class="event-date">
+                                <span class="day">17</span>
+                                <span class="month">FEB</span>
+                            </div>
+                        </div>
+                        <div class="col-md-7 event-content">
+                            <span class="event-badge">Traditional Feast</span>
+                            <h3>Royal Iftar Selection</h3>
+                            <p>Celebrate the evening with our specially curated Iftar Buffet. A lavish spread featuring
+                                Arabian Mandi, assorted Kebabs, fresh fruit platters, and traditional sherbets. Perfect
+                                for family gatherings and spiritual evenings.</p>
+                            <p><strong>Highlights:</strong> Live Kebab grill station and traditional Date-shake welcome.
+                            </p>
+                            <a href="reservation.html" class="btn-gold">Book Iftar Buffet</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detailed Event 3 -->
+                <div class="col-md-12">
+                    <div class="event-card row no-gutters">
+                        <div class="col-md-5 event-img" style="background-image: url('images/about.jpg');">
+                            <div class="event-date">
+                                <span class="day">08</span>
+                                <span class="month">MAR</span>
+                            </div>
+                        </div>
+                        <div class="col-md-7 event-content">
+                            <span class="event-badge">Woman's Day Special</span>
+                            <h3>Celebrate Her with 20% Off</h3>
+                            <p>This Women’s Day, celebrating the strength, grace, and flavor women bring to the
+                                world—just like our dishes. Join us for a royal treat where every woman diner gets a
+                                special recognition and a flat 20% discount on the total bill for all-ladies tables!</p>
+                            <p><strong>Highlights:</strong> Complimentary Surprise Dessert and 20% flat discount.</p>
+                            <a href="reservation.html" class="btn-gold">Claim Women's Day Offer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">The White Fort</h2>
+                        <p>Experience the finest Biryani, North Indian, Mughlai, and Hyderabadi cuisines in the heart of
+                            Nashik. A perfect place for family and food lovers.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                            <li class="ftco-animate"><a href="https://www.youtube.com/watch?v=6WiVUWBnObA"><span
+                                        class="icon-youtube"></span></a></li>
+                            <li class="ftco-animate"><a
+                                    href="https://www.facebook.com/people/The-White-Fort-Restaurant/61576099786165/"><span
+                                        class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a
+                                    href="https://www.instagram.com/thewhitefort_restaurant_nashik/"><span
+                                        class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Open Hours</h2>
+                        <ul class="list-unstyled open-hours">
+                            <li class="d-flex"><span>Monday</span><span>12:00 - 23:45</span></li>
+                            <li class="d-flex"><span>Tuesday</span><span>12:00 - 23:45</span></li>
+                            <li class="d-flex"><span>Wednesday</span><span>12:00 - 23:45</span></li>
+                            <li class="d-flex"><span>Thursday</span><span>12:00 - 23:45</span></li>
+                            <li class="d-flex"><span>Friday</span><span>12:00 - 23:45</span></li>
+                            <li class="d-flex"><span>Saturday</span><span>12:00 - 23:45</span></li>
+                            <li class="d-flex"><span>Sunday</span><span>12:00 - 23:45</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Newsletter</h2>
+                        <p>Subscribe to get the latest updates on our special offers and new menu items.</p>
+                        <form action="#" class="subscribe-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control mb-2 text-center"
+                                    placeholder="Enter email address">
+                                <input type="submit" value="Subscribe" class="form-control submit px-3">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Instagram</h2>
+                        <div class="thumb d-sm-flex">
+                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-1.jpg);"></a>
+                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-2.jpg);"></a>
+                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-3.jpg);"></a>
+                        </div>
+                        <div class="thumb d-flex">
+                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-4.jpg);"></a>
+                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-5.jpg);"></a>
+                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-6.jpg);"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+                        is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                            target="_blank">Colorlib</a> & <a href="#" target="_blank">Technokraftservices LLP</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
