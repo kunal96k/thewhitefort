@@ -30,6 +30,34 @@
 
 	<!-- ===== Special Offer Modal (Reel Style) ===== -->
 	<style>
+		/* Global Mobile Scroll Fixes */
+		html,
+		body {
+			overflow-x: hidden !important;
+			overflow-y: visible !important;
+			height: auto !important;
+			min-height: 100vh !important;
+			position: relative !important;
+			-webkit-overflow-scrolling: touch !important;
+			touch-action: auto !important;
+		}
+
+		/* Owl Carousel Touch Scroll Conflict Fix */
+		.owl-carousel,
+		.owl-stage,
+		.owl-stage-outer,
+		.owl-item,
+		.home-slider,
+		.slider-item {
+			-ms-touch-action: pan-y !important;
+			touch-action: pan-y !important;
+		}
+
+		#ftco-loader {
+			opacity: 0 !important;
+			pointer-events: none !important;
+		}
+
 		.twf-offer-overlay {
 			display: none;
 			position: fixed;
@@ -458,6 +486,64 @@
 			border-radius: 0 !important;
 		}
 
+
+
+		@media (max-width: 767.98px) {
+
+			.home-slider,
+			.home-slider .slider-item,
+			.home-slider .slider-text,
+			.home-slider .js-fullheight,
+			.home-slider .owl-stage-outer,
+			.home-slider .owl-stage,
+			.home-slider .owl-item {
+				height: 90vh !important;
+				min-height: 550px !important;
+				max-height: 90vh !important;
+				overflow: hidden !important;
+				touch-action: pan-y !important;
+				position: relative !important;
+			}
+
+			.home-slider .slider-text .one-forth {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				display: flex !important;
+				align-items: center !important;
+				justify-content: center !important;
+				padding: 20px;
+				background: rgba(0, 0, 0, 0.4);
+				z-index: 2;
+			}
+
+			.home-slider .slider-text .one-third {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				width: 100% !important;
+				height: 100% !important;
+				z-index: 1;
+			}
+
+			.home-slider .slider-text .text h1 {
+				font-size: 36px !important;
+				color: #fff !important;
+				text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+			}
+
+			.home-slider .slider-text .text p {
+				color: rgba(255, 255, 255, 0.9) !important;
+			}
+
+			.home-slider .slider-text .thumb h4 {
+				color: #fff !important;
+				font-size: 12px;
+			}
+		}
+
 		/* Contact Card Icons */
 		.dbox .icon {
 			background: #c0872a !important;
@@ -585,7 +671,7 @@
 				<div class="col-sm-5 img img-2 d-flex align-items-center justify-content-center justify-content-md-end"
 					style="background-image: url(images/about.jpg); position: relative">
 					<a href="https://www.youtube.com/watch?v=6WiVUWBnObA"
-						class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+						class="icon-video popup-youtube d-flex justify-content-center align-items-center">
 						<span class="ion-ios-play"></span>
 					</a>
 				</div>
@@ -696,7 +782,7 @@
 						</div>
 					</div>
 					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/breakfast-2.jpg);"></div>
+						<div class="menu-img img" style="background-image: url(images/breakfast-4.jpg);"></div>
 						<div class="text">
 							<div class="d-flex">
 								<div class="one-half">
@@ -1416,9 +1502,10 @@
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/jquery.timepicker.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-	<script src="js/google-map.js"></script>
+	<!-- Google Maps JS API disabled due to key errors - using iframe instead -->
+	<!-- <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
+	-->
+	<!-- <!-- <script src="js/google-map.js"></script> --> -->
 	<script src="js/main.js"></script>
 
 	<!-- Booking & Offer Scripts -->

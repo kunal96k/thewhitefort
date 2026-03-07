@@ -162,7 +162,7 @@ AOS.init({
 				$('.number').each(function () {
 					var $this = $(this),
 						num = $this.data('number');
-					console.log(num);
+
 					$this.animateNumber(
 						{
 							number: num,
@@ -262,18 +262,22 @@ AOS.init({
 	});
 
 	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		disableOn: 700,
 		type: 'iframe',
-		mainClass: 'mfp-fade',
+		mainClass: 'mfp-fade mfp-img-mobile',
 		removalDelay: 160,
-		preloader: false,
+		preloader: true,
 		fixedContentPos: false,
 		iframe: {
 			patterns: {
 				youtube: {
 					index: 'youtube.com/',
 					id: 'v=',
-					src: '//www.youtube.com/embed/%id%?autoplay=1&controls=0'
+					src: '//www.youtube.com/embed/%id%?autoplay=1&controls=0&rel=0'
+				},
+				vimeo: {
+					index: 'vimeo.com/',
+					id: '/',
+					src: '//player.vimeo.com/video/%id%?autoplay=1'
 				}
 			}
 		}
